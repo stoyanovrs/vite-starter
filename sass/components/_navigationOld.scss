@@ -1,0 +1,45 @@
+@use '../abstract/' as *;
+
+
+header {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .brand{
+      h1{
+        font-size: 2rem;
+      }
+    }
+    nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        li {
+          a {
+            padding: 1rem;
+            margin: 0 .5rem;
+          }
+        }
+      }
+      .sidenav {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
+  @include respond-to('small') {
+    background: blue;
+  }
+}

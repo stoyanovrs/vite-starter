@@ -1,0 +1,11 @@
+@use '../abstract/' as *;
+button,
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+  touch-action: manipulation;
+  padding: .3rem 1rem;
+  border-radius: var(--main-border-radius);
+}

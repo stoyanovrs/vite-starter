@@ -1,0 +1,44 @@
+@use '../abstract/' as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+:root[data-theme="dark"] {
+  // Dark
+  --main-bg-color: #{$main-bg-color-dark};
+  --main-text-color: #{$main-text-color-dark};
+  --surface-one: #{$surface1-dark};
+}
+:root[data-theme="light"] {
+  --main-bg-color: #{$main-bg-color};
+  --main-text-color: #{$main-text-color}; 
+  --surface-one: #{$surface1}; 
+}
+// html {
+//   color: var(--color-text);
+//   background: var(--color-background);
+// }
+
+// html[data-theme="light"] {
+//   color: var(--main-text-color);
+//   background: var(--main-bg-color);
+// }
+
+// html[data-theme="dark"] {
+//   color: var(--main-text-color-dark);
+//   background: var(--main-bg-color-dark);
+// }
+body {
+  min-block-size: 100%;
+  font-family: "Roboto";
+  font-size: $base-font-size;
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+
+
